@@ -1,0 +1,5 @@
+Potatoes;Fruits and vegetables;20;Trabajador
+Chicken;Meat and fish;30;Vago
+Milkshake;Milk derivatives;25;Trabajador
+Salmon;Meat and fish;30;Mago
+jose;company;39;Vago

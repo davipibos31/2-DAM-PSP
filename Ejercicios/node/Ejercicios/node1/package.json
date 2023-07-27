@@ -1,0 +1,16 @@
+{
+  "name": "node1",
+  "version": "1.0.0",
+  "description": "Esto es una prueba de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 1",
+    "start":"node index.js"
+  },
+  "author": "jose",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "express":"*"
+  }
+}

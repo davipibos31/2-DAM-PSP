@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="ConstantConditions" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="SUGGEST_NULLABLE_ANNOTATIONS" value="false" />
+      <option name="DONT_REPORT_TRUE_ASSERT_STATEMENTS" value="false" />
+      <option name="REPORT_CONSTANT_REFERENCE_VALUES" value="false" />
+    </inspection_tool>
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="org.openjfx:javafx-fxml" />
+          <option value="org.openjfx:javafx-web" />
+          <option value="org.openjfx:javafx-media" />
+          <option value="org.controlsfx:controlsfx" />
+          <option value="net.synedra:validatorfx" />
+          <option value="eu.hansolo:tilesfx" />
+          <option value="com.github.almasb:fxgl" />
+          <option value="org.junit.jupiter:junit-jupiter-api" />
+          <option value="org.junit.jupiter:junit-jupiter-engine" />
+          <option value="org.openjfx:javafx-controls" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

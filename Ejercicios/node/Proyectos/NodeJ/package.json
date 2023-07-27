@@ -1,0 +1,15 @@
+{
+  "name": "nodej",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^6.8.4"
+  }
+}

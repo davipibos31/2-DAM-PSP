@@ -1,0 +1,4 @@
+Potatoes;Fruits and vegetables;200
+Chicken;Meat and fish;300
+Milkshake;Milk derivatives;250
+Salmon;Meat and fish;300

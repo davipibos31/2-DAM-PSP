@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4.HelloControllerMenssage">
+   <bottom>
+      <VBox fx:id="vboxfinal" prefHeight="22.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hboxme" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labelmens" text="Message" underline="true">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" right="100.0" top="15.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fx:id="imageviewmen" fitHeight="60.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="hboxfinal" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtsendmen" prefHeight="26.0" prefWidth="313.0">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btnselectimage" mnemonicParsing="false" onAction="#selectimagemen" prefHeight="26.0" prefWidth="103.0" text="Select Image">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnsendmen" mnemonicParsing="false" onAction="#sendmen" prefHeight="26.0" prefWidth="112.0" text="Send Message">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+   </bottom>
+   <center>
+      <VBox fx:id="vboxcentral" prefHeight="202.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="TableView" onTouchPressed="#selecttablamen" prefHeight="227.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="mensaje" prefWidth="326.40003049373627" text="mensaje" />
+                <TableColumn fx:id="imagen" prefWidth="113.5999755859375" text="imagen" />
+                  <TableColumn fx:id="sent" minWidth="0.0" prefWidth="138.39993286132812" text="sent" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+            <Button fx:id="btndeletemen" disable="true" mnemonicParsing="false" onAction="#deletemen" text="Delete Message">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="250.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <HBox fx:id="hboxcentral" prefHeight="55.0" prefWidth="598.0">
+               <children>
+                  <Label fx:id="labelsendmen" text="Send Message" underline="true">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="labelusers" text="Users" underline="true">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TableViewUsers" onTouchPressed="#selecttableuser" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="nomCol" prefWidth="288.7999938726425" text="nom" />
+                <TableColumn fx:id="avaCol" prefWidth="308.8000183105469" text="ava" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox fx:id="hboxarriba" prefHeight="158.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vboxinicialarriba" prefHeight="149.0" prefWidth="139.0">
+               <children>
+                  <Label fx:id="labelnombre" prefHeight="66.0" prefWidth="137.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="btnchangeimagen" mnemonicParsing="false" onAction="#changeImage" text="Change Image">
+                     <VBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxsegundoinicial" prefHeight="150.0" prefWidth="110.0">
+               <children>
+                  <ImageView fx:id="imageview" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox fx:id="vboxterceroinicial" prefHeight="158.0" prefWidth="194.0">
+               <children>
+                  <Label fx:id="labeltitulo" text="Your Message" underline="true">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" top="75.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxcuartoinicial" prefHeight="158.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnrefrescar" mnemonicParsing="false" onAction="#refrescar" text="Refresh">
+                     <VBox.margin>
+                        <Insets left="90.0" top="105.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

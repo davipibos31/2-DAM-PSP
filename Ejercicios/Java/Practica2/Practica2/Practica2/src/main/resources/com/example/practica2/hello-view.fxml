@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="BorderPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica2.HelloController">
+   <top>
+      <MenuBar fx:id="MenuBar1" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="Menu1" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="MenuItem1" mnemonicParsing="false" onAction="#load1" text="Load file..." />
+                <MenuItem fx:id="MenuItem11" mnemonicParsing="false" onAction="#exit1" text="Exit" />
+            </items>
+          </Menu>
+          <Menu fx:id="Menu2" mnemonicParsing="false" text="Process">
+            <items>
+              <MenuItem fx:id="MenuItem2" mnemonicParsing="false" onAction="#start1" text="Start" />
+                  <MenuItem fx:id="MenuItem21" mnemonicParsing="false" onAction="#clear1" text="Clear" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <ListView fx:id="Listview1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <ListView fx:id="Listview2" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox prefHeight="246.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label1" prefHeight="137.0" prefWidth="206.0" text="Total Pages">
+               <padding>
+                  <Insets left="70.0" top="120.0" />
+               </padding>
+            </Label>
+            <Label fx:id="label2" prefHeight="30.0" prefWidth="202.0" text="0">
+               <padding>
+                  <Insets left="95.0" />
+               </padding>
+            </Label>
+            <Label fx:id="label3" prefHeight="37.0" prefWidth="200.0" text="Processed">
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+            </Label>
+            <Label fx:id="label4" prefHeight="25.0" prefWidth="204.0" text="0">
+               <padding>
+                  <Insets left="95.0" />
+               </padding>
+            </Label>
+            <Label fx:id="label5" prefHeight="37.0" prefWidth="200.0" text="Total Links">
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+            </Label>
+            <Label fx:id="label6" prefHeight="25.0" prefWidth="204.0" text="0">
+               <padding>
+                  <Insets left="95.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,15 @@
+public class myTread extends Thread{
+    private String name;
+
+    public myTread(String name) {
+        super(name);
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        for( int i = 0; i < 10; i++) {
+            System.out.println(this.name + " " + i);
+        }
+    }
+}

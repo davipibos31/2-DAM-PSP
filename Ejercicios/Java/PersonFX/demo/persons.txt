@@ -1,0 +1,2 @@
+Potatoes;Fruits and vegetables;20;Mago
+Chicken;Meat and fish;30;Vago

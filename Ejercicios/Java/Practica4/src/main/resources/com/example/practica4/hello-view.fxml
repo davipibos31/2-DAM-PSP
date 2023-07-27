@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="boderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica4.HelloController">
+   <center>
+      <VBox fx:id="vboxcentral" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hboxusuario" prefHeight="100.0" prefWidth="293.0">
+               <children>
+                  <Label fx:id="labelusuario" prefHeight="18.0" prefWidth="70.0" text="Usuario:">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtusuario" accessibleRole="TEXT" />
+               </children>
+            </HBox>
+            <HBox fx:id="hboxcontrasenya" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labelcontrasenya" prefHeight="18.0" prefWidth="70.0" text="Contraseña:">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtcontrasenya" accessibleRole="TEXT" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox fx:id="vboxarriba" prefHeight="76.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="login" prefHeight="31.0" prefWidth="91.0" text="  LOGIN  " textAlignment="CENTER" underline="true">
+               <VBox.margin>
+                  <Insets left="115.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox fx:id="vboxabajo" prefHeight="66.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btniniciar" mnemonicParsing="false" onAction="#inicio" onMousePressed="#iniciopresed" text="Iniciar Sesion">
+               <VBox.margin>
+                  <Insets left="125.0" />
+               </VBox.margin>
+            </Button>
+            <Hyperlink fx:id="hyperlink" onAction="#link" prefHeight="24.0" prefWidth="183.0" text="No tienes cuenta. Pincha aquí.">
+               <VBox.margin>
+                  <Insets left="75.0" top="5.0" />
+               </VBox.margin>
+            </Hyperlink>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
