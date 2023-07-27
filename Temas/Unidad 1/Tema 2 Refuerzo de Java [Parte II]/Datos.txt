@@ -1,0 +1,6 @@
+This line contains a date 12/03/89
+This one doesn't 19/04
+Neither does this one 04/0449
+15/10/2009 is also a date
+maybe 28/02/2003 is too?
+Who knows
